@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="김태린의 개인 프로필 및 포트폴리오 사이트">
+  <title>김태린 | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">TAERIN<span>.</span></a>
+    <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">WEB DEVELOPER · CREATIVE BUILDER</p>
+          <h1>아이디어를<br><span>웹으로 만듭니다.</span></h1>
+          <p class="hero-description">
+            사용자에게 편리한 경험을 제공하는 웹사이트와 서비스를 만드는
+            프론트엔드 중심의 개발자입니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">작업물 보기 <span>→</span></a>
+            <a href="#contact" class="btn secondary">연락하기</a>
+          </div>
+          <div class="quick-info">
+            <span>📍 Seoul, Korea</span>
+            <span>✉️ hello@taerin.dev</span>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="profile-orbit orbit-one"></div>
+          <div class="profile-orbit orbit-two"></div>
+          <div class="profile-avatar">T</div>
+          <div class="floating-card card-top">Available for<br><strong>New Projects</strong> ✦</div>
+          <div class="floating-card card-bottom"><strong>3+</strong><br>Years of building</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint">SCROLL <span>↓</span></a>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-heading reveal">
+        <p class="section-number">01 — ABOUT</p>
+        <h2>저는 이런 방식으로<br><span>문제를 해결합니다.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">
+            디자인과 개발 사이에서 사용자가 실제로 느끼는 경험을 고민합니다.
+          </p>
+          <p>
+            새로운 기술을 빠르게 익히는 것보다 중요한 것은 기술을 사용해
+            어떤 문제를 해결할 것인지라고 생각합니다. 작은 인터랙션 하나부터
+            전체 서비스 구조까지 목적에 맞는 결과물을 만드는 것을 좋아합니다.
+          </p>
+          <p>
+            현재는 HTML, CSS, JavaScript를 기반으로 반응형 웹과 사용자 중심의
+            인터페이스를 만드는 작업에 집중하고 있습니다.
+          </p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong>12+</strong><span>Completed Projects</span></div>
+          <div class="stat"><strong>8</strong><span>Web Experiences</span></div>
+          <div class="stat"><strong>3+</strong><span>Years Learning & Building</span></div>
+          <div class="stat"><strong>100%</strong><span>Curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="section-heading reveal">
+        <p class="section-number">02 — EXPERIENCE</p>
+        <h2>경험과 <span>성장 과정</span></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="year">2026</span>
+          <div><h3>Personal Web Project</h3><p>개인 프로젝트를 통해 웹 기획부터 UI 구현, 인터랙션까지 전체 제작 과정을 경험했습니다.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="year">2025</span>
+          <div><h3>Frontend Study & Projects</h3><p>HTML, CSS, JavaScript를 중심으로 반응형 레이아웃과 DOM 기반 인터랙션을 학습했습니다.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="year">2024</span>
+          <div><h3>Design & Web Fundamentals</h3><p>웹 디자인 원칙과 사용자 경험을 공부하며 직접 화면을 구현하는 습관을 만들었습니다.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-heading reveal">
+        <p class="section-number">03 — PROJECTS</p>
+        <h2>최근에 만든 <span>작업물</span></h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-visual visual-one"><span>01</span><strong>LEXORA</strong></div>
+          <div class="project-content">
+            <p class="project-type">SERVICE / LANDING PAGE</p>
+            <h3>반려동물 돌봄 서비스</h3>
+            <p>신뢰감과 편의성을 중심으로 구성한 반려동물 돌봄 서비스 랜딩페이지 콘셉트입니다.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="#contact" class="project-link">View project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-two"><span>02</span><strong>DASH</strong></div>
+          <div class="project-content">
+            <p class="project-type">WEB APP</p>
+            <h3>개인 업무 대시보드</h3>
+            <p>할 일과 일정을 한 화면에서 관리할 수 있도록 설계한 반응형 대시보드입니다.</p>
+            <div class="tags"><span>JavaScript</span><span>UI/UX</span></div>
+            <a href="#contact" class="project-link">View project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-three"><span>03</span><strong>MOOD</strong></div>
+          <div class="project-content">
+            <p class="project-type">INTERACTIVE WEB</p>
+            <h3>인터랙티브 브랜드 페이지</h3>
+            <p>스크롤 애니메이션과 마이크로 인터랙션을 활용한 브랜드 소개 페이지입니다.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <a href="#contact" class="project-link">View project ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-heading reveal">
+        <p class="section-number">04 — SKILLS</p>
+        <h2>사용할 수 있는 <span>기술</span></h2>
+      </div>
+      <div class="skill-grid">
+        <div class="skill reveal"><span>01</span><h3>HTML5</h3><p>Semantic markup & accessibility</p></div>
+        <div class="skill reveal"><span>02</span><h3>CSS3</h3><p>Responsive UI & animation</p></div>
+        <div class="skill reveal"><span>03</span><h3>JavaScript</h3><p>DOM & interactive experiences</p></div>
+        <div class="skill reveal"><span>04</span><h3>Figma</h3><p>Wireframe & interface design</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-inner reveal">
+        <p class="section-number">05 — CONTACT</p>
+        <h2>함께 멋진 것을<br><span>만들어 볼까요?</span></h2>
+        <p>새로운 프로젝트, 협업, 아이디어가 있다면 편하게 이야기해주세요.</p>
+        <a class="contact-button" href="mailto:hello@taerin.dev">hello@taerin.dev <span>↗</span></a>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="CodePen">CodePen</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> TAERIN. All rights reserved.</span>
+    <span>Built with HTML · CSS · JavaScript</span>
+  </footer>
+
+  <button id="topButton" class="top-button" aria-label="맨 위로">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
