@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XOFLS — Sample Website</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Pretendard,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#171717;background:#f7f7f5;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(247,247,245,.88);backdrop-filter:blur(14px);border-bottom:1px solid #e7e7e3}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:22px;font-weight:800;letter-spacing:-.04em}.nav-links{display:flex;gap:28px;font-size:14px;color:#666}
+.hero{padding:120px 0 100px}.eyebrow{font-size:13px;font-weight:700;color:#777;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-.07em;max-width:850px;margin:20px 0 28px}.hero p{font-size:18px;color:#666;max-width:620px}.buttons{display:flex;gap:12px;margin-top:36px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;font-weight:700;font-size:14px;border:1px solid #171717}.primary{background:#171717;color:#fff}.secondary{background:transparent}
+section{padding:90px 0;border-top:1px solid #deded9}.section-title{font-size:14px;color:#777;margin-bottom:28px}.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:50px}.about-grid h2{font-size:42px;line-height:1.08;letter-spacing:-.05em;margin:0}.about-grid p{font-size:20px;color:#555;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid #e6e6e1;border-radius:20px;padding:30px;min-height:220px}.card span{font-size:12px;color:#999}.card h3{font-size:22px;margin:55px 0 10px}.card p{color:#666;margin:0}
+.contact{display:flex;justify-content:space-between;align-items:end;gap:30px}.contact h2{font-size:clamp(42px,6vw,72px);line-height:1;letter-spacing:-.06em;margin:0;max-width:650px}
+footer{padding:28px 0;color:#888;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:700px){.container{width:min(100% - 28px,1120px)}.nav{height:62px}.nav-links{gap:14px;font-size:12px}.hero{padding:80px 0}.hero h1{font-size:54px}.hero p{font-size:16px}.about-grid,.cards{grid-template-columns:1fr}.about-grid h2{font-size:36px}.about-grid p{font-size:18px}.contact{display:block}.contact .btn{margin-top:28px}section{padding:65px 0}}
+</style>
+</head>
+<body>
+<header><div class="container nav"><a class="logo" href="#">XOFLS</a><nav class="nav-links"><a href="#about">About</a><a href="#features">Features</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="container"><div class="eyebrow">Sample Landing Page</div><h1>Make ideas<br>feel simple.</h1><p>복잡한 아이디어를 명확한 경험으로 바꾸는 샘플 웹페이지입니다. 핵심 메시지를 한눈에 전달하고 방문자의 다음 행동을 자연스럽게 안내합니다.</p><div class="buttons"><a class="btn primary" href="#contact">시작하기</a><a class="btn secondary" href="#about">더 알아보기</a></div></div></section>
+<section id="about"><div class="container"><div class="section-title">01 / ABOUT</div><div class="about-grid"><h2>One clear message.</h2><p>좋은 웹사이트는 많은 정보를 보여주는 것보다 중요한 메시지를 명확하게 전달합니다. 이 페이지는 깔끔한 레이아웃과 강한 타이포그래피를 중심으로 구성했습니다.</p></div></div></section>
+<section id="features"><div class="container"><div class="section-title">02 / FEATURES</div><div class="cards"><article class="card"><span>01</span><h3>Clarity</h3><p>방문자가 무엇을 얻을 수 있는지 빠르게 이해합니다.</p></article><article class="card"><span>02</span><h3>Experience</h3><p>간결한 구조와 반응형 디자인으로 편안한 탐색 경험을 제공합니다.</p></article><article class="card"><span>03</span><h3>Action</h3><p>명확한 CTA를 통해 다음 행동으로 자연스럽게 연결합니다.</p></article></div></div></section>
+<section id="contact"><div class="container contact"><h2>Let’s build<br>something.</h2><a class="btn primary" href="mailto:hello@example.com">문의하기 →</a></div></section>
+</main>
+<footer><div class="container"><span>© 2026 XOFLS. Sample website.</span></div></footer>
+</body>
+</html>
