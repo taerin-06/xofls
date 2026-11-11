@@ -161,22 +161,15 @@
     <section id="contact" class="contact-section">
       <div class="contact-inner reveal">
         <p class="section-number">05 — GUESTBOOK</p>
-        <h2>방문해 주셔서<br><span>고맙습니다.</span></h2>
-        <p>짧은 인사나 응원의 메시지를 남겨주세요. 메시지는 공개 댓글로 표시됩니다.</p>
-
+        <h2>방문해 주셔서 <br><span>고맙습니다.</span></h2>
+        <p>짧은 인사나 응원의 메시지를 남겨주세요.</p>
         <form id="commentForm" class="comment-form">
           <label class="sr-only" for="commentInput">한 줄 댓글</label>
-          <input
-            id="commentInput"
-            name="comment"
-            type="text"
-            maxlength="200"
-            placeholder="한 줄 메시지를 남겨주세요 (최대 200자)"
-            autocomplete="off"
-            required
-          >
+          <input id="commentInput" name="comment" type="text" maxlength="200"
+            placeholder="댓글을 입력해 주세요 (최대 200자)" required>
           <button type="submit" id="commentSubmit">등록하기 <span>→</span></button>
-          <input type="text" name="website" id="commentWebsite" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="text" name="website" id="commentWebsite" class="hp-field"
+            tabindex="-1" autocomplete="off" aria-hidden="true">
         </form>
         <div class="comment-meta">
           <span id="commentStatus" role="status" aria-live="polite">댓글을 불러오는 중입니다.</span>
