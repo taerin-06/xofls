@@ -71,3 +71,19 @@ footer{display:flex;justify-content:space-between;padding:25px 5vw;background:va
 .comment-byline{font-size:12px;opacity:.6}
 .comment-empty{padding:24px 0;text-align:center;opacity:.6}
 @media(max-width:600px){.comment-form{flex-direction:column}.comment-form button{min-height:50px}.comment-meta{font-size:12px}}
+
+
+/* Guestbook visibility and layout fix */
+.contact-section{display:block!important;visibility:visible!important;opacity:1!important;position:relative;z-index:1;background:#d9ff45!important;color:#161616!important;padding:100px 24px!important;min-height:420px}
+.contact-inner{display:block!important;visibility:visible!important;opacity:1!important;max-width:900px!important;margin:0 auto!important}
+.contact-inner h2{color:#161616!important}
+.contact-inner h2 span{color:#687d00!important}
+.contact-inner>p{display:block!important;visibility:visible!important;opacity:1!important}
+.comment-form{display:flex!important;visibility:visible!important;opacity:1!important;max-width:760px!important;margin:32px auto 18px!important;gap:12px!important}
+.comment-form input:not(.hp-field){display:block!important;visibility:visible!important;opacity:1!important;flex:1 1 auto!important;min-width:0!important;height:58px!important;padding:0 20px!important;background:#fff!important;color:#161616!important;border:2px solid #777!important;border-radius:12px!important;font:inherit!important}
+.comment-form button{display:block!important;visibility:visible!important;opacity:1!important;min-height:58px!important;padding:0 24px!important;background:#161616!important;color:#fff!important;border:0!important;border-radius:12px!important;font:inherit!important;font-weight:700!important;cursor:pointer!important}
+.comment-meta,.comment-list{display:flex;visibility:visible;opacity:1;max-width:760px;margin-left:auto;margin-right:auto}
+.comment-meta{justify-content:space-between}
+.comment-list{display:block;list-style:none;padding:0}
+.comment-empty{display:block!important;color:#343900!important}
+@media(max-width:600px){.comment-form{flex-direction:column!important}.comment-form input:not(.hp-field),.comment-form button{width:100%!important}}
