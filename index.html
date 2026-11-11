@@ -9,6 +9,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Guestbook is intentionally styled inline so it cannot disappear due to stale/overridden CSS. */
+    #contact.guestbook-panel{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;z-index:2!important;background:#d9ff45!important;color:#171717!important;padding:76px 24px!important;text-align:center!important}
+    #contact .contact-inner{display:block!important;visibility:visible!important;opacity:1!important;max-width:900px!important;margin:0 auto!important}
+    #contact h2{display:block!important;color:#171717!important;font-size:clamp(2.8rem,6vw,5rem)!important;line-height:1.05!important;margin:14px 0 18px!important}
+    #contact h2 span{color:#617600!important}
+    #contact .guestbook-description{display:block!important;color:#3e4700!important;opacity:1!important}
+    #contact form#commentForm{display:flex!important;visibility:visible!important;opacity:1!important;gap:12px!important;width:100%!important;max-width:760px!important;margin:28px auto 14px!important}
+    #contact #commentInput{display:block!important;visibility:visible!important;opacity:1!important;flex:1 1 auto!important;min-width:0!important;height:60px!important;padding:0 20px!important;border:2px solid #596000!important;border-radius:12px!important;background:#fff!important;color:#171717!important;font:inherit!important}
+    #contact #commentSubmit{display:block!important;visibility:visible!important;opacity:1!important;min-height:60px!important;padding:0 25px!important;border:0!important;border-radius:12px!important;background:#171717!important;color:#fff!important;font:inherit!important;font-weight:700!important;cursor:pointer!important}
+    #contact #commentStatus,#contact #commentCount{color:#3e4700!important;opacity:1!important}
+    #contact .comment-meta{display:flex!important;justify-content:space-between!important;max-width:760px!important;margin:0 auto 14px!important}
+    #contact #commentList{display:block!important;max-width:760px!important;margin:0 auto!important;padding:0!important;list-style:none!important;text-align:left!important}
+    #contact .comment-empty{display:block!important;padding:22px 8px!important;color:#3e4700!important}
+    @media(max-width:600px){#contact.guestbook-panel{padding:56px 20px!important}#contact form#commentForm{flex-direction:column!important}#contact #commentInput,#contact #commentSubmit{width:100%!important}}
+  </style>
 </head>
 <body>
   <header class="header">
@@ -23,26 +39,7 @@
     </nav>
   </header>
 
-  <section id="contact" class="contact-section">
-    <div class="contact-inner">
-      <p class="section-number">GUESTBOOK · VISITOR MESSAGE</p>
-      <h2>방문자 <span>방명록</span></h2>
-      <p>사이트를 둘러보셨나요? 짧은 인사나 응원의 메시지를 남겨주세요.</p>
-      <form id="commentForm" class="comment-form">
-        <label class="sr-only" for="commentInput">한 줄 댓글</label>
-        <input id="commentInput" name="comment" type="text" maxlength="200" placeholder="댓글을 입력해 주세요 (최대 200자)" required>
-        <button type="submit" id="commentSubmit">댓글 등록하기 <span>→</span></button>
-        <input type="text" name="website" id="commentWebsite" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-      </form>
-      <div class="comment-meta">
-        <span id="commentStatus" role="status" aria-live="polite">댓글을 불러오는 중입니다.</span>
-        <span><b id="commentCount">0</b> messages</span>
-      </div>
-      <ul id="commentList" class="comment-list" aria-label="방문자 댓글 목록">
-        <li class="comment-empty">아직 등록된 메시지가 없습니다. 첫 번째 인사를 남겨주세요!</li>
-      </ul>
-    </div>
-  </section>
+
 
 
   <main>
@@ -75,6 +72,28 @@
       </div>
       <a href="#about" class="scroll-hint">SCROLL <span>↓</span></a>
     </section>
+
+    <section id="contact" class="contact-section guestbook-panel">
+    <div class="contact-inner">
+      <p class="section-number">GUESTBOOK · VISITOR MESSAGE</p>
+      <h2>방문자 <span>방명록</span></h2>
+      <p><span class="guestbook-description">사이트를 둘러보셨나요? 짧은 인사나 응원의 메시지를 남겨주세요.</span></p>
+      <form id="commentForm" class="comment-form">
+        <label class="sr-only" for="commentInput">한 줄 댓글</label>
+        <input id="commentInput" name="comment" type="text" maxlength="200" placeholder="댓글을 입력해 주세요 (최대 200자)" required>
+        <button type="submit" id="commentSubmit">댓글 등록하기 <span>→</span></button>
+        <input type="text" name="website" id="commentWebsite" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </form>
+      <div class="comment-meta">
+        <span id="commentStatus" role="status" aria-live="polite">댓글을 불러오는 중입니다.</span>
+        <span><b id="commentCount">0</b> messages</span>
+      </div>
+      <ul id="commentList" class="comment-list" aria-label="방문자 댓글 목록">
+        <li class="comment-empty">아직 등록된 메시지가 없습니다. 첫 번째 인사를 남겨주세요!</li>
+      </ul>
+    </div>
+    </section>
+
 
 
 
