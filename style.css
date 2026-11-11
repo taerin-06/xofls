@@ -93,7 +93,7 @@ footer{display:flex;justify-content:space-between;padding:25px 5vw;background:va
 #contact.contact-section{
   display:block!important; position:relative!important; z-index:5!important;
   width:100%!important; min-height:0!important; padding:72px 24px 64px!important;
-  margin:0!important; background:#d9ff45!important; color:#161616!important;
+  margin:76px 0 0!important; background:#d9ff45!important; color:#161616!important;
   text-align:center!important; opacity:1!important; visibility:visible!important;
 }
 #contact .contact-inner{display:block!important;max-width:900px!important;margin:0 auto!important;opacity:1!important;visibility:visible!important}
@@ -107,6 +107,7 @@ footer{display:flex;justify-content:space-between;padding:25px 5vw;background:va
 #contact .comment-meta{display:flex!important;max-width:760px!important;color:#3e4700!important;opacity:1!important}
 #contact .comment-list{display:block!important;max-width:760px!important;opacity:1!important}
 #contact .comment-empty{display:block!important;color:#3e4700!important}
+@media(max-width:800px){#contact.contact-section{margin-top:68px!important}}
 @media(max-width:600px){
  #contact.contact-section{padding:56px 20px!important}
  #contact .comment-form{flex-direction:column!important}
