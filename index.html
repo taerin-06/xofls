@@ -54,6 +54,27 @@
       <a href="#about" class="scroll-hint">SCROLL <span>↓</span></a>
     </section>
 
+    <section id="contact" class="contact-section">
+      <div class="contact-inner">
+        <p class="section-number">GUESTBOOK · VISITOR MESSAGE</p>
+        <h2>방문자 <span>방명록</span></h2>
+        <p>사이트를 둘러보셨나요? 짧은 인사나 응원의 메시지를 남겨주세요.</p>
+        <form id="commentForm" class="comment-form">
+          <label class="sr-only" for="commentInput">한 줄 댓글</label>
+          <input id="commentInput" name="comment" type="text" maxlength="200" placeholder="댓글을 입력해 주세요 (최대 200자)" required>
+          <button type="submit" id="commentSubmit">댓글 등록하기 <span>→</span></button>
+          <input type="text" name="website" id="commentWebsite" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </form>
+        <div class="comment-meta">
+          <span id="commentStatus" role="status" aria-live="polite">댓글을 불러오는 중입니다.</span>
+          <span><b id="commentCount">0</b> messages</span>
+        </div>
+        <ul id="commentList" class="comment-list" aria-label="방문자 댓글 목록">
+          <li class="comment-empty">아직 등록된 메시지가 없습니다. 첫 번째 인사를 남겨주세요!</li>
+        </ul>
+      </div>
+    </section>
+
     <section id="about" class="section about">
       <div class="section-heading reveal">
         <p class="section-number">01 — ABOUT</p>
@@ -158,28 +179,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <div class="contact-inner">
-        <p class="section-number">05 — GUESTBOOK</p>
-        <h2>방문해 주셔서 <br><span>고맙습니다.</span></h2>
-        <p>짧은 인사나 응원의 메시지를 남겨주세요.</p>
-        <form id="commentForm" class="comment-form">
-          <label class="sr-only" for="commentInput">한 줄 댓글</label>
-          <input id="commentInput" name="comment" type="text" maxlength="200"
-            placeholder="댓글을 입력해 주세요 (최대 200자)" required>
-          <button type="submit" id="commentSubmit">등록하기 <span>→</span></button>
-          <input type="text" name="website" id="commentWebsite" class="hp-field"
-            tabindex="-1" autocomplete="off" aria-hidden="true">
-        </form>
-        <div class="comment-meta">
-          <span id="commentStatus" role="status" aria-live="polite">댓글을 불러오는 중입니다.</span>
-          <span><b id="commentCount">0</b> messages</span>
-        </div>
-        <ul id="commentList" class="comment-list" aria-label="방문자 댓글 목록">
-          <li class="comment-empty">아직 등록된 메시지가 없습니다. 첫 번째 인사를 남겨주세요!</li>
-        </ul>
-      </div>
-    </section>
+
   </main>
 
   <footer>
