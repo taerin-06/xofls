@@ -87,3 +87,28 @@ footer{display:flex;justify-content:space-between;padding:25px 5vw;background:va
 .comment-list{display:block;list-style:none;padding:0}
 .comment-empty{display:block!important;color:#343900!important}
 @media(max-width:600px){.comment-form{flex-direction:column!important}.comment-form input:not(.hp-field),.comment-form button{width:100%!important}}
+
+
+/* Always-visible guestbook placed directly below the navigation */
+#contact.contact-section{
+  display:block!important; position:relative!important; z-index:5!important;
+  width:100%!important; min-height:0!important; padding:72px 24px 64px!important;
+  margin:0!important; background:#d9ff45!important; color:#161616!important;
+  text-align:center!important; opacity:1!important; visibility:visible!important;
+}
+#contact .contact-inner{display:block!important;max-width:900px!important;margin:0 auto!important;opacity:1!important;visibility:visible!important}
+#contact .section-number{display:block!important;color:#4d5b00!important}
+#contact h2{display:block!important;color:#161616!important;font-size:clamp(2.8rem,6vw,5rem)!important;line-height:1.05!important;margin:14px 0 18px!important}
+#contact h2 span{color:#647900!important}
+#contact .contact-inner>p{display:block!important;color:#3e4700!important;opacity:1!important}
+#contact .comment-form{display:flex!important;max-width:760px!important;width:100%!important;margin:28px auto 14px!important;gap:12px!important;opacity:1!important;visibility:visible!important}
+#contact .comment-form input:not(.hp-field){display:block!important;flex:1 1 auto!important;width:auto!important;min-width:0!important;height:58px!important;padding:0 20px!important;background:#fff!important;color:#161616!important;border:2px solid #596000!important;border-radius:12px!important;font:inherit!important;opacity:1!important;visibility:visible!important}
+#contact .comment-form button{display:block!important;min-height:58px!important;padding:0 24px!important;background:#161616!important;color:#fff!important;border:0!important;border-radius:12px!important;font:inherit!important;font-weight:700!important;opacity:1!important;visibility:visible!important}
+#contact .comment-meta{display:flex!important;max-width:760px!important;color:#3e4700!important;opacity:1!important}
+#contact .comment-list{display:block!important;max-width:760px!important;opacity:1!important}
+#contact .comment-empty{display:block!important;color:#3e4700!important}
+@media(max-width:600px){
+ #contact.contact-section{padding:56px 20px!important}
+ #contact .comment-form{flex-direction:column!important}
+ #contact .comment-form input:not(.hp-field),#contact .comment-form button{width:100%!important}
+}
