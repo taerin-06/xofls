@@ -160,15 +160,31 @@
 
     <section id="contact" class="contact-section">
       <div class="contact-inner reveal">
-        <p class="section-number">05 — CONTACT</p>
-        <h2>함께 멋진 것을<br><span>만들어 볼까요?</span></h2>
-        <p>새로운 프로젝트, 협업, 아이디어가 있다면 편하게 이야기해주세요.</p>
-        <a class="contact-button" href="mailto:hello@taerin.dev">hello@taerin.dev <span>↗</span></a>
-        <div class="socials">
-          <a href="#" aria-label="GitHub">GitHub</a>
-          <a href="#" aria-label="CodePen">CodePen</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <p class="section-number">05 — GUESTBOOK</p>
+        <h2>방문해 주셔서<br><span>고맙습니다.</span></h2>
+        <p>짧은 인사나 응원의 메시지를 남겨주세요. 메시지는 공개 댓글로 표시됩니다.</p>
+
+        <form id="commentForm" class="comment-form">
+          <label class="sr-only" for="commentInput">한 줄 댓글</label>
+          <input
+            id="commentInput"
+            name="comment"
+            type="text"
+            maxlength="200"
+            placeholder="한 줄 메시지를 남겨주세요 (최대 200자)"
+            autocomplete="off"
+            required
+          >
+          <button type="submit" id="commentSubmit">등록하기 <span>→</span></button>
+          <input type="text" name="website" id="commentWebsite" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </form>
+        <div class="comment-meta">
+          <span id="commentStatus" role="status" aria-live="polite">댓글을 불러오는 중입니다.</span>
+          <span><b id="commentCount">0</b> messages</span>
         </div>
+        <ul id="commentList" class="comment-list" aria-label="방문자 댓글 목록">
+          <li class="comment-empty">아직 등록된 메시지가 없습니다. 첫 번째 인사를 남겨주세요!</li>
+        </ul>
       </div>
     </section>
   </main>
